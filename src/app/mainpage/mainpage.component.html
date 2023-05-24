@@ -11,7 +11,7 @@
 
     </div>
     <p class="toadd" [ngClass]="{hideValue: hideValue}">Please add a task</p>
-    <section class="container">
+    <section class="container" [ngClass]="{hideValue: !hideValue}">
         <header>Add a Task</header>
         <form action="#" class="form">
           <div class="input-box">
