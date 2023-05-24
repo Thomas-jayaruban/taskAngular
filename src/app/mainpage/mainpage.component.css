@@ -124,31 +124,31 @@
     display: flex;
     column-gap: 15px;
   }
-  .form .gender-box {
+  .form .priority-box {
     margin-top: 20px;
   }
-  .gender-box h3 {
+  .priority-box h3 {
     color: #333;
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 8px;
   }
-  .form :where(.gender-option, .gender) {
+  .form :where(.priority-option, .priority) {
     display: flex;
     align-items: center;
     column-gap: 50px;
     flex-wrap: wrap;
   }
-  .form .gender {
+  .form .priority {
     column-gap: 5px;
   }
-  .gender input {
+  .priority input {
     accent-color: rgb(130, 106, 251);
   }
-  .form :where(.gender input, .gender label) {
+  .form :where(.priority input, .priority label) {
     cursor: pointer;
   }
-  .gender label {
+  .priority label {
     color: #707070;
   }
   .address :where(input, .select-box) {
@@ -182,7 +182,7 @@
     .form .column {
       flex-wrap: wrap;
     }
-    .form :where(.gender-option, .gender) {
+    .form :where(.priority-option, .priority) {
       row-gap: 15px;
     }
   }
