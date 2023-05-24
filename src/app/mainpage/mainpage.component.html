@@ -14,35 +14,35 @@
     <section class="container" [ngClass]="{hideValue: !hideValue}">
         <header>Add a Task</header>
         
-        <form action="#" class="form">
+        <form action="#" class="form" #taskdetails="ngForm" (ngSubmit)="taskDetailsSubmit(taskdetails.value)">
           <div class="input-box">
             <label>Task Name</label>
-            <input type="text" placeholder="Enter Task Name" required />
+            <input type="text" placeholder="Enter Task Name" name="taskName" required ngModel/>
           </div>
           <div class="input-box">
             <label>SubTasks (if Available)</label>
-            <input type="text" placeholder="Enter SubTask" r/>
+            <input type="text" placeholder="Enter SubTask" name="taskSub" ngModel/>
           </div>
           <div class="column">
            
             <div class="input-box">
               <label>Task Date</label>
-              <input type="date" placeholder="Enter birth date" required />
+              <input type="date" placeholder="Enter Task Date" name = "taskDate" required ngModel />
             </div>
           </div>
           <div class="priority-box">
             <h3>Priority</h3>
             <div class="priority-option">
               <div class="priority">
-                <input type="radio" id="check-high" name="priority" checked />
+                <input type="radio" id="check-high" value="high" name="priority" ngModel />
                 <label for="check-high">High</label>
               </div>
               <div class="priority">
-                <input type="radio" id="check-normal" name="priority" />
+                <input type="radio" id="check-normal" value="normal" name="priority" ngModel />
                 <label for="check-normal">Normal</label>
               </div>
               <div class="priority">
-                <input type="radio" id="check-low" name="priority" />
+                <input type="radio" id="check-low" value="low" name="priority" ngModel/>
                 <label for="check-low">Low</label>
               </div>
             </div>

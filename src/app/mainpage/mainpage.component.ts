@@ -11,5 +11,12 @@ export class MainpageComponent {
    
     this.hideValue = true;
   }
+  ngOnInit(){
+
+  }
+  taskDetailsSubmit(data:any):void{
+    console.log(data);
+
+  }
   
 }
